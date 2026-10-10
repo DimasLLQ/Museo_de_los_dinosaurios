@@ -1,7 +1,280 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>Dinosaurios — Titanes del Mesozoico</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dinosaurios — Titanes del Mesozoico</title>
+    <style>
+        .seccion-museo {
+            background-color: #142b1a;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+
+            .tarjeta-dinosaurio {
+                border-radius: 10px;
+                padding: 15px;
+                text-align: center;
+                color: #d4af37;
+                text-decoration: none;
+
+                img {
+                    width: 500px;
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+
+            .catalogo {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+
+
+
+
+
+            img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+                display: block;
+                margin: 20px auto;
+            }
+
+            h2 {
+                color: #d4af37;
+                font-size: 42px;
+                margin-bottom: 15px;
+            }
+
+            p,
+            li {
+                line-height: 1.6;
+            }
+        }
+
+        footer {
+            text-align: center;
+            font-size: 14px;
+            color: #999999;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        header {
+            padding: 30px;
+            background-color: #142b1a;
+            border-radius: 12px;
+            margin-bottom: 20px;
+
+            h1 {
+                text-align: center;
+                font-size: 60px;
+                color: #d4af37;
+            }
+
+            p {
+                text-align: center;
+                font-size: 30px;
+            }
+        }
+
+        nav {
+            background-color: #1b3521;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+
+            a:hover {
+                color: #ffffff;
+                background-color: #315c3a;
+
+            }
+
+            a:first-of-type {
+                margin: 30px;
+            }
+
+            a {
+                color: #d4af37;
+                text-decoration: none;
+                margin-right: 30px;
+                transition: color 0.3s, background-color 0.3s;
+            }
+        }
+
+        body {
+            background-color: rgb(8, 21, 6);
+            color: #b5adad;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Catálogo de dinosaurios</h1>
+        <p>Explora el fascinante mundo de los dinosaurios y descubre las especies mas célebres que habitaron nuestro planeta durante
+            la
+            era Mesozoica. Conoce sus características, su alimentación, su tamaño y el período en el que vivieron.</p>
+    </header>
+    <nav>
+        <h3>Menú</h3>
+        <a href="index.html">Inicio</a>
+        <a href="cronologia.html">Cronología</a>
+    </nav>
+    <main>
+        <section class="seccion-museo">
+            <h2>Clasificación de los dinosaurios</h2>
+            <ul>
+                <li><strong>Terópodos:</strong> dinosaurios principalmente bípedos, entre los que se encuentran
+                    Tyrannosaurus rex,
+                    Velociraptor y las aves.</li>
+                <li><strong>Saurópodos:</strong> grandes dinosaurios herbívoros, generalmente de cuello largo y cuatro
+                    patas, como
+                    Diplodocus y Brachiosaurus.</li>
+                <li><strong>Ceratopsios:</strong> dinosaurios herbívoros caracterizados por sus picos y, en muchas
+                    especies, cuernos y
+                    grandes estructuras óseas detrás de la cabeza, como Triceratops.</li>
+                <li><strong>Estegosaurios:</strong> dinosaurios herbívoros con placas o espinas sobre el lomo, como
+                    Stegosaurus.</li>
+                <li><strong>Anquilosaurios:</strong> dinosaurios herbívoros protegidos por una armadura ósea, como
+                    Ankylosaurus.</li>
+                <li><strong>Ornitópodos:</strong> dinosaurios herbívoros que podían desplazarse sobre dos o cuatro
+                    patas, como
+                    Iguanodon.</li>
+            </ul>
+            <p>
+                Aunque convivieron con los dinosaurios, algunos reptiles voladores,
+                como los pterosaurios, no eran realmente dinosaurios, sino un grupo
+                diferente de reptiles adaptados al vuelo. Entre sus representantes
+                más conocidos se encuentran Pteranodon, Pterodactylus y Quetzalcoatlus.
+            </p>
+        </section>
+        <section class="seccion-museo">
+            <h2>Explora los dinosaurios</h2>
+            <div class="catalogo">
+                <a href="dinosaurios/alosaurio.html" class="tarjeta-dinosaurio">
+                    <img src="imagenes/alosaurio.png" alt="Allosaurus">
+                    <p>Allosaurus</p>
+                </a>
+
+                <a href="dinosaurios/amargasaurio.html" class="tarjeta-dinosaurio">
+                    <img src="imagenes/amargasaurio.png" alt="Amargasaurus cazaui">
+                    <p>Amargasaurus cazaui</p>
+                </a>
+
+                <a href="dinosaurios/anquilosaurio.html" class="tarjeta-dinosaurio">
+                    <img src="imagenes/anquilosaurio.png" alt="Ankylosaurus magniventris">
+                    <p>Ankylosaurus magniventris</p>
+                </a>
+
+                <a href="dinosaurios/apatosaurio.html" class="tarjeta-dinosaurio">
+                    <img src="imagenes/apatosaurio.png" alt="Apatosaurus">
+                    <p>Apatosaurus</p>
+                </a>
+
+                <a href="dinosaurios/baryonyx.html" class="tarjeta-dinosaurio">
+                    <img src="imagenes/baryonyx.png" alt="Baryonyx walkeri">
+                    <p>Baryonyx walkeri</p>
+                </a>
+
+                <a href="dinosaurios/braquiosaurio.html" class="tarjeta-dinosaurio">
+                    <img src="imagenes/braquiosaurio.png" alt="Brachiosaurus altithorax">
+                    <p>Brachiosaurus altithorax</p>
+                </a>
+
+                <a href="dinosaurios/carcharodontosaurio.html" class="tarjeta-dinosaurio">
+                    <img src="imagenes/carcharodontosaurio.png" alt="Carcharodontosaurus saharicus">
+                    <p>Carcharodontosaurus saharicus</p>
+                </a>
+
+                <a href="dinosaurios/carnotauro.html" class="tarjeta-dinosaurio">
+                    <img src="imagenes/carnotauro.png" alt="Carnotaurus sastrei">
+                    <p>Carnotaurus sastrei</p>
+                </a>
+
+                <a href="dinosaurios/ceratosaurio.html" class="tarjeta-dinosaurio">
+                    <img src="imagenes/ceratosaurio.png" alt="Ceratosaurus nasicornis">
+                    <p>Ceratosaurus nasicornis</p>
+                </a>
+
+                <a href="dinosaurios/dilofosaurio.html" class="tarjeta-dinosaurio">
+                    <img src="imagenes/dilofosaurio.png" alt="Dilophosaurus wetherilli">
+                    <p>Dilophosaurus wetherilli</p>
+                </a>
+
+                <a href="dinosaurios/diplodocus.html" class="tarjeta-dinosaurio">
+                    <img src="imagenes/diplodocus.png" alt="Diplodocus carnegii">
+                    <p>Diplodocus carnegii</p>
+                </a>
+
+                <a href="dinosaurios/espinosaurio.html" class="tarjeta-dinosaurio">
+                    <img src="imagenes/espinosaurio.png" alt="Spinosaurus aegyptiacus">
+                    <p>Spinosaurus aegyptiacus</p>
+                </a>
+
+                <a href="dinosaurios/estegosaurio.html" class="tarjeta-dinosaurio">
+                    <img src="imagenes/estegosaurio.png" alt="Stegosaurus stenops">
+                    <p>Stegosaurus stenops</p>
+                </a>
+
+                <a href="dinosaurios/gallimimus.html" class="tarjeta-dinosaurio">
+                    <img src="imagenes/gallimimus.png" alt="Gallimimus bullatus">
+                    <p>Gallimimus bullatus</p>
+                </a>
+
+                <a href="dinosaurios/giganotosaurio.html" class="tarjeta-dinosaurio">
+                    <img src="imagenes/giganotosaurio.png" alt="Giganotosaurus carolinii">
+                    <p>Giganotosaurus carolinii</p>
+                </a>
+
+                <a href="dinosaurios/iguanodon.html" class="tarjeta-dinosaurio">
+                    <img src="imagenes/iguanodon.png" alt="Iguanodon bernissartensis">
+                    <p>Iguanodon bernissartensis</p>
+                </a>
+
+                <a href="dinosaurios/paquicefalosaurio.html" class="tarjeta-dinosaurio">
+                    <img src="imagenes/paquicefalosaurio.png" alt="Pachycephalosaurus wyomingensis">
+                    <p>Pachycephalosaurus wyomingensis</p>
+                </a>
+
+                <a href="dinosaurios/parasaurio.html" class="tarjeta-dinosaurio">
+                    <img src="imagenes/parasaurio.png" alt="Parasaurolophus walkeri">
+                    <p>Parasaurolophus walkeri</p>
+                </a>
+
+                <a href="dinosaurios/tericinosaurio.html" class="tarjeta-dinosaurio">
+                    <img src="imagenes/tericinosaurio.png" alt="Therizinosaurus cheloniformis">
+                    <p>Therizinosaurus cheloniformis</p>
+                </a>
+
+                <a href="dinosaurios/tiranosaurio.html" class="tarjeta-dinosaurio">
+                    <img src="imagenes/tiranosaurio.png" alt="Tyrannosaurus rex">
+                    <p>Tyrannosaurus rex</p>
+
+                    <a href="dinosaurios/triceratops.html" class="tarjeta-dinosaurio">
+                        <img src="imagenes/triceratops.png" alt="Triceratops horridus">
+                        <p>Triceratops horridus</p>
+                    </a>
+
+                    <a href="dinosaurios/velociraptor.html" class="tarjeta-dinosaurio">
+                        <img src="imagenes/velociraptor.png" alt="Velociraptor mongoliensis">
+                        <p>Velociraptor mongoliensis</p>
+                    </a>
+
+                    <a href="dinosaurios/yutirano.html" class="tarjeta-dinosaurio">
+                        <img src="imagenes/yutirano.png" alt="Yutyrannus huali">
+                        <p>Yutyrannus huali</p>
+                    </a>
+
+
+                </a>
+            </div>
+        </section>
+    </main>
+</body>
+
 </html>
